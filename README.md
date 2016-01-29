@@ -1,8 +1,6 @@
 ansible
 =======
 
-[![Ansible Role](https://img.shields.io/ansible/role/6257.svg)](https://galaxy.ansible.com/list#/roles/6257)
-
 Installs Ansible
 
 Requirements
@@ -15,7 +13,7 @@ Role Variables
 
 | Name                    | Default | Description                   |
 |-------------------------|---------|-------------------------------|
-| ansible_install_version | 1.9.4   | Version of Ansible to install |
+| ansible_install_version | 2.0.0   | Version of Ansible to install |
 
 Dependencies
 ------------
@@ -26,10 +24,11 @@ Example Playbook
 ----------------
 
 Install Ansible
+
 ```
 - hosts: all
   roles:
-    - kbrebanov.ansible
+    - dwcramer.ansible
 ```
 
 License
