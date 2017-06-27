@@ -15,6 +15,6 @@
   tags: ansible
 
 - name: Install Ansible packages
-  apt: name={{ item }} state=present update_cache=yes
-  with_items: ansible_packages
+  apt: name={{ item }} state=present update_cache=yes force=yes
+  with_items: "{{ ansible_packages }}"
   tags: ansible
